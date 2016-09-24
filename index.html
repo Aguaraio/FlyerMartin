@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<script type="text/javascript" src="draggable.js"></script>
+<script type="text/javascript" src="font-selector.js"></script>
+<script type="text/javascript" src="selectorimg.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+    <p>Arrastra el texto dentro de la imagen:</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <p id="drag1" draggable="true" ondragstart="drag(event)"> asjd</p>
+    <div id="drag1">
+
+        <h1 id="liveh1 " draggable="true" ondragstart="drag(event)">Some text</h1>
+        <select id="selecth1FontFamily" name="selectFontFamily" onchange="updateh1family();">
+    <option> Serif </option>
+    <option> Arial </option>
+    <option> Sans-Serif </option>
+    <option> Tahoma </option>
+    <option> Verdana </option>
+    <option> Lucida Sans Unicode </option>
+  </select>
+    </div>
+
+    <input type="file" id="files" name="files[]" multiple />
+    <output id="list"></output>
+
+
+</body>
+
+</html>
